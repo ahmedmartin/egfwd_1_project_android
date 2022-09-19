@@ -9,7 +9,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.shoestoreapp.databinding.FragmentShoeListBinding
 import com.example.shoestoreapp.databinding.FragmentShoeListItemBinding
@@ -17,7 +16,7 @@ import com.example.shoestoreapp.databinding.FragmentShoeListItemBinding
 public class shoe_list() : Fragment(), MenuProvider {
 
 
-    private val viewModel: shoe_viewModel by activityViewModels()
+    private val viewModel: ShoeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +34,7 @@ public class shoe_list() : Fragment(), MenuProvider {
         // linear layout
        val shoe_list_view = binding.linearShoeList
 
+        viewModel.defult_value()
 
         viewModel.shoe_live_data.observe(viewLifecycleOwner, Observer { shoe_model_list->
 

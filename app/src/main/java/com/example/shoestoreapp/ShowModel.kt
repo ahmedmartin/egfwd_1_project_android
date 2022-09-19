@@ -1,6 +1,6 @@
 package com.example.shoestoreapp
 
-class show_model (
+class ShowModel (
     val name: String,
     val company: String,
     val size: String,

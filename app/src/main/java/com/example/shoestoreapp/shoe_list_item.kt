@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.shoestoreapp.databinding.FragmentShoeListItemBinding
 
-class shoe_list_item(ShowModel: show_model) : Fragment() {
+class shoe_list_item(ShowModel: ShowModel) : Fragment() {
 
-    lateinit var  Show_model: show_model
+    lateinit var  Show_model: ShowModel
 
     init {
       Show_model = ShowModel

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".shoe_list_item">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- the shape of shoe list item -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
